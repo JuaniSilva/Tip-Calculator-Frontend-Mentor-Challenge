@@ -19,6 +19,7 @@
       .attribution {
         font-size: 11px;
         text-align: center;
+        margin-top: 1rem;
       }
       .attribution a {
         color: hsl(228, 45%, 44%);
@@ -26,55 +27,75 @@
     </style>
   </head>
   <body>
-    <h1 class="title">Spliter</h1>
+    <h1 class="title">Spli<span>tter</span></h1>
 
     <form action="" class="calculator">
+      <div class="calculator__data">
+        <section class="calculator__input">
+          <p>Bill</p>
+          <input type="number" id="bill" />
+          <img src="images/icon-dollar.svg" alt="">
+        </section>
+        <section class="calculator__tip">
+          <p>Select Tip %</p>
+          <div class="form-control-5 ">
+            <input type="radio" id="radio-5" name="tip" />
+            <label for="radio-5">5%</label>
+          </div>
+          <div class="form-control-10 ">
+            <input type="radio" id="radio-10" name="tip" />
+            <label for="radio-10">10%</label>
+          </div>
+          <div class="form-control-15 ">
+            <input type="radio" id="radio-15" name="tip" />
+            <label for="radio-15">15%</label>
+          </div>
+          <div class="form-control-25 ">
+            <input type="radio" id="radio-25" name="tip" />
+            <label for="radio-25">25%</label>
+          </div>
+          <div class="form-control-50 ">
+            <input type="radio" id="radio-50" name="tip" />
+            <label for="radio-50">50%</label>
+          </div>
+          <div class="custom">
+            <input class="" type="number" id="custom" placeholder="Custom" />
+          </div>
+        </section>
 
-      <section class="calculator__input">
-        <p>Bill</p>
-        <input type="number" id="bill" />
-      </section>
-
-      <section class="calculator__tip">
-        <p>Select Tip %</p>
-        <input type="radio" id="radio-5"/>
-        <label for="radio-5">5%</label>
-
-        <input type="radio" id="radio-10"/>
-        <label for="radio-10">10%</label>
-
-        <input type="radio" id="radio-15"/>
-        <label for="radio-15">15%</label>
-
-        <input type="radio" id="radio-25"/>
-        <label for="radio-25">25%</label>
-
-        <input type="radio" id="radio-50"/>
-        <label for="radio-50">50%</label>
-
-        <input type="number" id="custom" placeholder="Custom" />
-      </section>
+        <section class="calculator__input">
+          <p>Number of People</p>
+          <input type="number" id="number-of-people" />
+          <img src="images/icon-person.svg" alt="">
+        </section>
+      </div>
       
-      <section class="calculator__input">
-        <p>Number of People</p>
-        <input type="number" id="number-of-people" />
-      </section>
-
-      <footer class="calculator__footer">
-        <p>Tip Amount</p>
-        <span class="footer-small"> / person</span>
-        <p>Total</p>
-        <span class="footer-small"> / person </span>
-        <button>Reset</button>
-      </footer>
+      <div class="calculator__result">
+        <div class="result">
+          <span>
+            <h3>Tip Amount</h3>
+            <p>/ person</p>
+          </span>
+          <p class="" id="tip">$0.00</p>
+        </div>
+        <div class="result">
+          <span>
+            <h3>Total</h3>
+            <p>/ person</p>
+          </span>
+          <p class="" id="total">$0.00</p>
+        </div>
+        <button class="btn" type="reset">Reset</button>
+      </div>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </div>
     </form>
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+
     <script src="script.js"></script>
   </body>
 </html>
