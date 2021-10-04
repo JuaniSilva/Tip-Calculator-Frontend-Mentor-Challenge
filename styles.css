@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+:root {
+  --primary-cyan: hsl(172, 67%, 45%);
+  --neutral-very-dark-cyan: hsl(183, 100%, 15%);
+  --neutral-dark-grayish-cyan-1: hsl(186, 14%, 43%);
+  --neutral-dark-grayish-cyan-2: hsl(184, 14%, 56%);
+  --neutral-light-grayish-cyan-1: hsl(185, 41%, 84%);
+  --neutral-light-grayish-cyan-2: hsl(189, 41%, 97%);
+  --neutral-white: hsl(0, 0%, 100%);
+  --font-f-main: "Space Mono", monospace;
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-f-main);
+}
