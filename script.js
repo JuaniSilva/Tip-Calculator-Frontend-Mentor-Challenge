@@ -49,14 +49,14 @@ percentages.forEach((radio) =>
 
 function calculateTipAndTotal() {
   if (typeof percentages !== "number") {
-    let tipValue = ((billValue * 0) / numOfPeopleValue)
-    tip.innerHTML = `$ ${tipValue.toFixed(2)}`;
-    let totalValue = billValue/numOfPeopleValue
-    total.innerHTML = `$ ${totalValue.toFixed(2)}`
+    let tipValue = ((billValue * 0))
+    tip.innerHTML = `$ ${(tipValue  / numOfPeopleValue).toFixed(2)}`;
+    let totalValue = billValue
+    total.innerHTML = `$ ${(totalValue /numOfPeopleValue).toFixed(2)}`
   } else {
-    let tipValue = ((billValue * percentages) / numOfPeopleValue)
-    tip.innerHTML = `$ ${tipValue.toFixed(2)}`;
-    let totalValue = (tipValue + billValue)/numOfPeopleValue
-    total.innerHTML = `$ ${totalValue.toFixed(2)}`
+    let tipValue = (billValue * percentages)
+    tip.innerHTML = `$ ${(tipValue / numOfPeopleValue).toFixed(2)}`;
+    let totalValue = (tipValue + billValue)
+    total.innerHTML = `$ ${(totalValue  / numOfPeopleValue).toFixed(2)}`
   }
 }
