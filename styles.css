@@ -19,6 +19,7 @@
 }
 body{
   background-color: var(--neutral-light-grayish-cyan-1);
+  overflow-x: hidden;
 }
 .title{
   display: block;
@@ -33,7 +34,6 @@ body{
   max-width: 100%;
 }
 .calculator{
-  /* position: relative; */
   background: var(--neutral-white);
   display: flex;
   flex-direction: column;
