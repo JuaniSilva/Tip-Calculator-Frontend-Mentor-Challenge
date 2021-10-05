@@ -62,7 +62,7 @@ section p{
   background: var(--neutral-light-grayish-cyan-2);
   border: none;
   width: 100%;
-  padding: 0.8rem clamp(0 + 1vw, 1rem, 1rem );
+  padding: 0.8rem 1rem;
   color: var(--neutral-very-dark-cyan);
   font-weight: 700;
   font-size: 24px;
