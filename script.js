@@ -27,15 +27,15 @@ numOfPeople.addEventListener("input", setNumOfPeopleValue);
 
 function setNumOfPeopleValue() {
   numOfPeopleValue = Number(Math.round(numOfPeople.value));
+  if(numOfPeopleValue <= 0){
+    numOfPeopleValue = 1
+  }
   calculateTipAndTotal();
 }
 
 customPorc.addEventListener("input", setCustomProcValue);
 
 function setCustomProcValue() {
-  // if(radio.checked){
-  //   radio
-  // }
   percentages = Math.round(customPorc.value) /100;
   calculateTipAndTotal();
 }
