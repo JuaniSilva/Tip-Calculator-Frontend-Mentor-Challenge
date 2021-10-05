@@ -19,7 +19,6 @@
 }
 body{
   background-color: var(--neutral-light-grayish-cyan-1);
-  overflow-x: hidden;
 }
 .title{
   display: block;
@@ -62,8 +61,8 @@ section p{
 .calculator input{
   background: var(--neutral-light-grayish-cyan-2);
   border: none;
-  min-width: 100%;
-  padding: 0.8rem 1rem;
+  width: 100%;
+  padding: 0.8rem clamp(0 + 1vw, 1rem, 1rem );
   color: var(--neutral-very-dark-cyan);
   font-weight: 700;
   font-size: 24px;
@@ -73,7 +72,7 @@ section p{
 }
 .calculator__tip{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, minmax(50px, 1fr));
   grid-template-rows: repeat(4, 1fr);
   max-width: 100%;
   min-height: 14.375rem;
@@ -84,8 +83,8 @@ section p{
   display: inline-block;
   background: var(--neutral-very-dark-cyan);
   color: var(--neutral-light-grayish-cyan-2);
-  padding: 1rem 3.75rem;
-  min-width: 100%;
+  padding: 1rem ;
+  width: 100%;
   border-radius: 0.5rem;
   text-align: center;
   font-weight: 700;
@@ -135,7 +134,7 @@ section p{
   grid-row: 4;
 }
 .custom{
-  min-width: 100%;
+  width: 100%;
   grid-column: 2;
   grid-row: 4;
 }
@@ -161,14 +160,14 @@ section p{
 }
 .result {
   display: flex;
-  min-width: 100%;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
 }
 .result >p{
   color: var(--primary-cyan);
   font-weight: 700;
-  font-size: 24px;
+  font-size: clamp(1rem,1rem + 1vw, 24px);
 }
 
 .btn{
@@ -193,6 +192,7 @@ section p{
     gap: 2.5rem;
     max-height: 30.625rem;
     border-radius: 1rem;
+    margin: 0 auto;
   }
   .calculator__data{
     max-width: 100%;
