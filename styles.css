@@ -141,6 +141,7 @@ section p{
 .custom input{
   display: inline-block;
   max-width: 100%;
+  min-height: 100%;
   padding: 1rem ;
   border-radius: 0.5rem;
   font-weight: 700;
